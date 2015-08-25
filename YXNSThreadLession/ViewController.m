@@ -58,6 +58,7 @@
     }
 }
 
+//下载图片
 - (void)loadImage:(NSNumber *)index
 {
     if (index.intValue != 11) {
@@ -67,11 +68,11 @@
     YXImageData *yxData = [[YXImageData alloc] init];
     yxData.index = index.intValue;
     yxData.imageData = data;
-//    self.showImage.image = [UIImage imageWithData:data];
     [self performSelectorOnMainThread:@selector(updateImage:) withObject:yxData waitUntilDone:YES];
     
 }
 
+//使用url请求图片
 - (NSData *)requestData
 {
     NSURL *dataUrl = [NSURL URLWithString:ImageURL];
@@ -79,11 +80,11 @@
     return data;
 }
 
+//显示图片
 - (void)updateImage:(YXImageData *)imageData
 {
     UIImageView *tempData = self.imageArray[imageData.index];
     tempData.image = [UIImage imageWithData:imageData.imageData];
-//    self.showImage.image = [UIImage imageWithData:imageData.imageData];
 }
 
 @end
