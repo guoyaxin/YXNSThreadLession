@@ -1,32 +1,44 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>Yxnsthreadlession by guoyaxin</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">Yxnsthreadlession</h1>
-      <h2 class="project-tagline">使用NSThread写的一个多线程，包含了NSThread的所有常用方法，可以用来详细学习NSThread</h2>
-      <a href="https://github.com/guoyaxin/YXNSThreadLession" class="btn">View on GitHub</a>
-      <a href="https://github.com/guoyaxin/YXNSThreadLession/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/guoyaxin/YXNSThreadLession/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
+<html>
 
-    <section class="main-content">
-      <h1>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Yxnsthreadlession : 使用NSThread写的一个多线程，包含了NSThread的所有常用方法，可以用来详细学习NSThread">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Yxnsthreadlession</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/guoyaxin/YXNSThreadLession">View on GitHub</a>
+
+          <h1 id="project_title">Yxnsthreadlession</h1>
+          <h2 id="project_tagline">使用NSThread写的一个多线程，包含了NSThread的所有常用方法，可以用来详细学习NSThread</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/guoyaxin/YXNSThreadLession/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/guoyaxin/YXNSThreadLession/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
 <a id="yxnsthreadlession" class="anchor" href="#yxnsthreadlession" aria-hidden="true"><span class="octicon octicon-link"></span></a>YXNSThreadLession</h1>
 
 <h2>
 <a id="通过使用nsthread类来讲解ios中的多线程创建了12个线程来下载12张图片而且把最后一个线程的优先级设置成最高其他线程在最后一个线程执行完毕之后在执行" class="anchor" href="#%E9%80%9A%E8%BF%87%E4%BD%BF%E7%94%A8nsthread%E7%B1%BB%E6%9D%A5%E8%AE%B2%E8%A7%A3ios%E4%B8%AD%E7%9A%84%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%88%9B%E5%BB%BA%E4%BA%8612%E4%B8%AA%E7%BA%BF%E7%A8%8B%E6%9D%A5%E4%B8%8B%E8%BD%BD12%E5%BC%A0%E5%9B%BE%E7%89%87%E8%80%8C%E4%B8%94%E6%8A%8A%E6%9C%80%E5%90%8E%E4%B8%80%E4%B8%AA%E7%BA%BF%E7%A8%8B%E7%9A%84%E4%BC%98%E5%85%88%E7%BA%A7%E8%AE%BE%E7%BD%AE%E6%88%90%E6%9C%80%E9%AB%98%E5%85%B6%E4%BB%96%E7%BA%BF%E7%A8%8B%E5%9C%A8%E6%9C%80%E5%90%8E%E4%B8%80%E4%B8%AA%E7%BA%BF%E7%A8%8B%E6%89%A7%E8%A1%8C%E5%AE%8C%E6%AF%95%E4%B9%8B%E5%90%8E%E5%9C%A8%E6%89%A7%E8%A1%8C" aria-hidden="true"><span class="octicon octicon-link"></span></a>通过使用NSThread类来讲解iOS中的多线程，创建了12个线程，来下载12张图片，而且把最后一个线程的优先级设置成最高，其他线程在最后一个线程执行完毕之后在执行</h2>
 
 <h2>
-<a id="主要方法" class="anchor" href="#%E4%B8%BB%E8%A6%81%E6%96%B9%E6%B3%95" aria-hidden="true"><span class="octicon octicon-link"></span></a>主要方法</h2>
+<a id="viewcontrollerm" class="anchor" href="#viewcontrollerm" aria-hidden="true"><span class="octicon octicon-link"></span></a>ViewController.m</h2>
 
 <h3>
 <a id="1点击按钮下载的方法来开始执行" class="anchor" href="#1%E7%82%B9%E5%87%BB%E6%8C%89%E9%92%AE%E4%B8%8B%E8%BD%BD%E7%9A%84%E6%96%B9%E6%B3%95%E6%9D%A5%E5%BC%80%E5%A7%8B%E6%89%A7%E8%A1%8C" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.点击按钮下载的方法来开始执行</h3>
@@ -53,7 +65,7 @@
 </code></pre>
 
 <h3>
-<a id="2去下载图片的方法当下载完成之后去主线程中刷新ui来显示图片" class="anchor" href="#2%E5%8E%BB%E4%B8%8B%E8%BD%BD%E5%9B%BE%E7%89%87%E7%9A%84%E6%96%B9%E6%B3%95%E5%BD%93%E4%B8%8B%E8%BD%BD%E5%AE%8C%E6%88%90%E4%B9%8B%E5%90%8E%E5%8E%BB%E4%B8%BB%E7%BA%BF%E7%A8%8B%E4%B8%AD%E5%88%B7%E6%96%B0ui%E6%9D%A5%E6%98%BE%E7%A4%BA%E5%9B%BE%E7%89%87" aria-hidden="true"><span class="octicon octicon-link"></span></a>2.去下载图片的方法，当下载完成之后，去主线程中刷新UI，来显示图片</h3>
+<a id="2下载图片当下载完成之后去主线程中刷新ui来显示图片" class="anchor" href="#2%E4%B8%8B%E8%BD%BD%E5%9B%BE%E7%89%87%E5%BD%93%E4%B8%8B%E8%BD%BD%E5%AE%8C%E6%88%90%E4%B9%8B%E5%90%8E%E5%8E%BB%E4%B8%BB%E7%BA%BF%E7%A8%8B%E4%B8%AD%E5%88%B7%E6%96%B0ui%E6%9D%A5%E6%98%BE%E7%A4%BA%E5%9B%BE%E7%89%87" aria-hidden="true"><span class="octicon octicon-link"></span></a>2.下载图片，当下载完成之后，去主线程中刷新UI，来显示图片</h3>
 
 <pre><code>-(void)loadImage:(NSNumber *)index{
     if (index.intValue != 11) {
@@ -67,14 +79,47 @@
 }
 </code></pre>
 
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/guoyaxin/YXNSThreadLession">Yxnsthreadlession</a> is maintained by <a href="https://github.com/guoyaxin">guoyaxin</a>.</span>
+<h3>
+<a id="3使用url请求图片把请求回来的数据保存在nsdata中" class="anchor" href="#3%E4%BD%BF%E7%94%A8url%E8%AF%B7%E6%B1%82%E5%9B%BE%E7%89%87%E6%8A%8A%E8%AF%B7%E6%B1%82%E5%9B%9E%E6%9D%A5%E7%9A%84%E6%95%B0%E6%8D%AE%E4%BF%9D%E5%AD%98%E5%9C%A8nsdata%E4%B8%AD" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.使用url请求图片，把请求回来的数据保存在NSData中</h3>
 
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+<pre><code>- (NSData *)requestData
+{
+    NSURL *dataUrl = [NSURL URLWithString:ImageURL];
+    NSData *data = [NSData dataWithContentsOfURL:dataUrl];
+    return data;
+}
+</code></pre>
+
+<h3>
+<a id="4显示图片" class="anchor" href="#4%E6%98%BE%E7%A4%BA%E5%9B%BE%E7%89%87" aria-hidden="true"><span class="octicon octicon-link"></span></a>4.显示图片</h3>
+
+<pre><code>- (void)updateImage:(YXImageData *)imageData
+{
+    UIImageView *tempData = self.imageArray[imageData.index];
+    tempData.image = [UIImage imageWithData:imageData.imageData];
+}    
+</code></pre>
+
+<h2>
+<a id="yximagedata-包含了一个index和nsdata" class="anchor" href="#yximagedata-%E5%8C%85%E5%90%AB%E4%BA%86%E4%B8%80%E4%B8%AAindex%E5%92%8Cnsdata" aria-hidden="true"><span class="octicon octicon-link"></span></a>YXImageData 包含了一个index和NSData</h2>
+
+<pre><code>@interface YXImageData : NSObject
+@property (nonatomic, assign) int index;
+@property (nonatomic, retain) NSData *imageData;
+@end
+</code></pre>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Yxnsthreadlession maintained by <a href="https://github.com/guoyaxin">guoyaxin</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
       </footer>
+    </div>
 
-    </section>
+    
 
-  
   </body>
 </html>
