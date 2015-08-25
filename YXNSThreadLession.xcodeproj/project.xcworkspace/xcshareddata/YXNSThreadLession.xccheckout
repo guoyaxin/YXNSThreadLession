@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>79F3F381-D529-40C6-B529-9F6551A41E92</string>
+	<key>IDESourceControlProjectName</key>
+	<string>YXNSThreadLession</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5D76F95DFA1F1D1D25CC88DAD58120DE3C20E979</key>
+		<string>https://github.com/guoyaxin/YXNSThreadLession.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>YXNSThreadLession.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5D76F95DFA1F1D1D25CC88DAD58120DE3C20E979</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/guoyaxin/YXNSThreadLession.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>5D76F95DFA1F1D1D25CC88DAD58120DE3C20E979</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5D76F95DFA1F1D1D25CC88DAD58120DE3C20E979</string>
+			<key>IDESourceControlWCCName</key>
+			<string>YXNSThreadLession</string>
+		</dict>
+	</array>
+</dict>
+</plist>
