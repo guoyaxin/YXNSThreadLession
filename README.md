@@ -1,0 +1,2 @@
+# YXNSThreadLession
+使用NSThread写的一个多线程，包含了NSThread的所有常用方法，可以用来详细学习NSThread
