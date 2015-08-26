@@ -11,5 +11,4 @@
 @interface YXImageData : NSObject
 @property (nonatomic, assign) int index;
 @property (nonatomic, retain) NSData *imageData;
-
 @end

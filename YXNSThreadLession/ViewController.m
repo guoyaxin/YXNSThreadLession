@@ -45,6 +45,7 @@
         thread.name=[NSString stringWithFormat:@"myThread%i",i];//设置线程名称
         if (i == 11) {
             [thread setThreadPriority:1];
+            
         }
         else {
             [thread setThreadPriority:0.1];
@@ -69,7 +70,6 @@
     yxData.index = index.intValue;
     yxData.imageData = data;
     [self performSelectorOnMainThread:@selector(updateImage:) withObject:yxData waitUntilDone:YES];
-    
 }
 
 //使用url请求图片

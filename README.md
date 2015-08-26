@@ -58,7 +58,8 @@
     @end
 
 
-
+##相关论坛帖子在：[http://blog.csdn.net/guoyaxin002/article/details/47989161](http://blog.csdn.net/guoyaxin002/article/details/47989161)
+##相关技术讨论群在：qq群号：486365320
 
 
 
